@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add product page</title>
+
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Home Page/css/style.css">
+    <script src="update.js"></script>
+</head>
+
+<body>
+    <div class="bar"></div>
+    <header class="header">
+        <ul>
+            <li>
+                <a href="/Home Page/Home_page.html">Home</a>
+            </li>
+            <li>
+                <a href="/Home Page/Home_page.html#new_arrival">New Arrival</a>
+            </li>
+            <li>Women</li>
+            <li>Men</li>
+            <li>Children</li>
+            <li>
+                <a href="/Home Page/team.html">Team</a>
+            </li>
+        </ul>
+
+        <div class="form-input">
+            <input type="text" placeholder="enter text">
+            <img src="/Home Page/assets/svg/search.svg" alt="">
+        </div>
+        <div class="ative">
+            <a>Search</a>
+        </div>
+        <ul>
+            <li>
+                <a href="/Search/search.html">Advanced Search</a>
+            </li>
+            </li>
+        </ul>
+        <div class="btn" style="margin: 0;">
+            <a href="/Log in/login_add.html">Login</a>
+        </div>
+        <div class="btn" style="margin: 0;">Sign Up</div>
+    </header>
+    <div class="container">
+        <h1>Update Product</h1><br><br>
+        <div class="head">
+            <h2>MLB Unisex Monogram Cleveland Indians Sweatshirt</h2>
+        </div>
+        <div class="admin-product-form-container">
+            <form action="CRUD.html" id="Update-form" method="post" enctype="multipart/form-data">
+                <h2>Product Quantity</h2>
+                <input type="text" id="newq" placeholder="enter product quantity" name="product_quantity" class="box">
+                <h2>Product Price</h2>
+                <input type="text" id="newp" placeholder="enter product price" name="product_price" class="box"><br>
+                <input type="button" class="btn" id="submit-update" onclick="update()" name="add_product" value="Enter">
+                <input type="reset" class="btn" name="re_product" value="Reset">
+                <a href="CRUD.html" id="back" class="btn">Back</a>
+
+            </form>
+        </div>
+    </div>
+    <script src="delete.js"></script>
+    <script src="add.js"></script>
+    <script src="update.js"></script>
+</body>
+
+</html>

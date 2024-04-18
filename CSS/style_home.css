@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+*{
+    font-family: "Kanit", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.text-primary{
+    color: #3b6262 !important;
+}
+
+.bar{
+    background-color: #3B6262;
+    height: 30px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #C4D9D9;
+    padding: .5rem 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.header .icon {
+    width: 40px;
+    height: 40px;
+}
+
+.header .icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.header ul li{
+    color: #3B6262;
+    transition: .3s ease 0s;
+    border-bottom: 1px solid transparent;
+    user-select: none;
+    cursor: pointer;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: unset;
+}
+
+.header ul li:hover,.header ul li.active{
+    border-color: #3B6262;
+}
+
+.header .user-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    transition: .3s ease 0s;
+    border: 1px solid transparent;
+}
+
+.header .user-btn:hover{
+    border-color: #3B6262;
+}
+
+.header .user-btn img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header .btn{
+    padding: 5px 10px;
+    border-radius: 50px;
+    background-color: white;
+    color: #3B6262;
+    transition: .3s ease 0s;
+    user-select: none;
+    cursor: pointer;
+}
+
+.header .btn a{
+    text-decoration: none;
+    color: unset;
+}
+
+.header .btn:hover{
+    border-color: #3B6262;
+    background-color: white;
+}
+
+.header .btn:active{
+    transform: scale(.9);
+}
+
+#right{
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 50px;
+    margin-left: auto;
+}
+
+.form-input input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}

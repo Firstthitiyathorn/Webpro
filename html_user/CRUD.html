@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    
+    <link rel="stylesheet" href="/CSS/style_home.css">
+    <link rel="stylesheet" href="/CSS/style_product.css">
+
+</head>
+
+<body>
+    <div class="bar"></div>
+    <header class="header">
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>Women</li>
+        <li>Men</li>
+        <li>Children</li>
+        <li>
+          <a href="/team">Team</a>
+        </li>
+      </ul>
+  
+      <div class="btn" id="right">
+        <a href="/adserach">Search</a></li>
+      </div>
+  
+      <div class="btn">
+        <a href="/login">Login</a>
+      </div>
+      <div class="btn">Sign Up</div>
+      </header>
+    <div class="container">
+        <h1>Product Management</h1><br><br>
+        <div class="table">
+            <table class="table dark">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Product Name</th>
+                        <th>Size</th>
+                        <th>Color</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Picture</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="product-list">
+                </tbody>
+            </table>
+
+            <br><br>
+            <a href="/choose" class="btnn">Back</a>
+            <a href="/addproduct" class="btnn">add product</a>
+        </div>
+    </div>
+    <script src="delete.js"></script>
+    <script src="add.js"></script>
+    <script src="update.js"></script>
+</body>
+
+</html>

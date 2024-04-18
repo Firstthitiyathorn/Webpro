@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.container{
+    font-size: 50.5%;
+    overflow-x: hidden;
+}
+
+.btnn{
+    text-align: center;
+    width: 8%;
+    border-radius: 15px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    background: #3B6262;
+    color: white;
+}
+
+#back{
+    margin-left: 75%;
+}
+
+.btn:hover{
+    background: black;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.admin-product-form-container form{
+    max-width: 100%;
+    padding:2rem;
+    border-radius: .5rem;
+    background: #C4D9D9;
+}
+
+.head {
+    max-width: 100%;
+    padding:2rem;
+    background: #3B6262;
+    color: white;
+}
+
+.container h1{
+    text-transform: uppercase;
+    color:black;
+    margin: bottom 10px;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.admin-product-form-container form .box{
+    width: 50%;
+    border-radius: .5rem;
+    padding: 1.2rem 1.5rem;
+    margin:1rem 0;
+    background: white;
+    text-transform: none;
+}
+
+.table th,td{
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #3B6262;
+    color: white;
+}
+
+.table td{
+    padding: 10px;
+    font-size: 1.7rem;
+    text-align: center;
+    background-color:#C4D9D9;
+    color: black;
+}
+
+.botton{
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #3B6262;
+    color: white;
+}
+
+.botton:hover{
+    background-color: black;
+}

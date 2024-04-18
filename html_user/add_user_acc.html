@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add product page</title>
+
+    <!-- font -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <link rel="stylesheet" href="/Search/searchCss.css">
+    <link rel="stylesheet" href="Manage.css">
+    <link rel="stylesheet" href="/Home Page/css/style.css">
+
+</head>
+
+<body>
+    <div class="bar"></div>
+    <header class="header">
+        <ul>
+          <li>
+            <a href="/Home Page/Home_page.html">Home</a>
+          </li>
+          <li>
+            <a href="/Home Page/Home_page.html#new_arrival">New Arrival</a>
+          </li>
+          <li>Women</li>
+          <li>Men</li>
+          <li>Children</li>
+          <li>
+            <a href="/Home Page/team.html">Team</a>
+          </li>
+        </ul>
+    
+        <div class="form-input">
+          <input type="text" placeholder="enter text">
+          <img src="/Home Page/assets/svg/search.svg" alt="">
+        </div>
+        <div class="ative">
+          <a>Search</a>
+        </div>
+        <ul>
+          <li>
+            <a href="/Search/search.html">Advanced Search</a>
+          </li>
+          </li>
+        </ul>
+        <div class="btn">
+          <a href="/Log in/login_add.html">Login</a>
+        </div>
+        <div class="btn">Sign Up</div>
+      </header>
+
+    <h1 style="margin: 0;">Add New Account</h1>
+    <div>
+        <form action="/adduser-submit" id="user-form" class="row justify-content-center mb-4" method="post">
+            <div class="col-10 mb-3">
+                <label for="profilePicture">Profile Picture</label>
+                <input class="form-control" name="ProfilepICTURE" id="profilePic" type="file" accept="image/*">
+            </div>
+            <div class="col-10 mb-3">
+                <label for="userId">ID</label>
+                <input class="form-control" name="ID" id="userId" type="text" placeholder="Enter ID" required>
+            </div>
+            <div class="col-10 mb-3">
+                <label for="userRole">Role</label>
+                <input class="form-control" name="Role" id="userRole" type="text" placeholder="Enter role" required>
+            </div>
+            <div class="col-10 mb-3">
+                <label for="fullname">Full Name</label>
+                <input class="form-control" name="Full_name" id="fullname" type="text" placeholder="Enter fullname" required>
+            </div>
+            <div class="col-10 mb-3">
+                <label for="username">Username</label>
+                <input class="form-control" name="User_name" id="username" type="text" placeholder="Enter username" required>
+            </div>
+            <div class="col-10 mb-3">
+                <label for="email">Email</label>
+                <input class="form-control" name="Email" id="email" type="text" placeholder="Enter email" required>
+            </div>
+            <br>
+            <a href="/user" type="button" class="back-btn">Back</a>
+            <!-- <input class="submit-btn" type="submit" value="Submit"> -->
+            <input type="submit" id="submit" class="submit-btn" name="add_user" value="Enter">
+            <input type="reset" class="reset-btn" name="re_product" value="Reset">
+
+        </form>
+        <br>
+    </div>
+
+    <script src="deleteUser.js"></script>
+    <script src="addUser.js"></script>
+    <script src="updateUser.js"></script>
+</body>
+
+</html>

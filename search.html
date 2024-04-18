@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Search Page</title>
+    <link rel="stylesheet" href=searchCSS.css>
+    <link rel="stylesheet" href="/Home Page/css/style.css">
+   
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script>
+        function goBack() {
+          window.history.back(); // Go back to the previous page in history
+        }
+
+        function toggleSearchButton() {
+            var input = document.getElementById("searchInput");
+            var button = document.getElementById("searchButton");
+
+            // Show the button if input is not empty, hide it otherwise
+            if (input.value.trim() !== "") {
+                button.style.display = "inline-block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+
+        // Function to perform search (you can customize this function)
+        function search() {
+            var searchTerm = document.getElementById("searchInput").value.trim();
+            // Perform search based on the searchTerm
+            alert("Performing search for: " + searchTerm);
+        }
+
+    </script>
+</head>
+<body>
+    <div class="bar"></div>
+    <header class="header">
+        <ul>
+          <li>
+            <a href="/Home Page/Home_page.html">Home</a>
+          </li>
+          <li>
+            <a href="/Home Page/Home_page.html#new_arrival">New Arrival</a>
+          </li>
+          <li>Women</li>
+          <li>Men</li>
+          <li>Children</li>
+          <li>
+            <a href="/Home Page/team.html">Team</a>
+          </li>
+        </ul>
+    
+        <div class="form-input">
+          <input type="text" placeholder="enter text">
+          <img src="/Home Page/assets/svg/search.svg" alt="">
+        </div>
+        <div class="ative">
+          <a>Search</a>
+        </div>
+        <ul>
+          <li>
+            <a href="/Search/search.html">Advanced Search</a>
+          </li>
+          </li>
+        </ul>
+        <div class="btn">
+          <a href="/Log in/login_add.html">Login</a>
+        </div>
+        <div class="btn">Sign Up</div>
+      </header>
+
+    <main>
+        <h1>Category</h1>
+        <article class="box">
+            
+            <div id="nav-wrapper">
+            <form>
+                <ul>
+                    <li> 
+                        <label for="colortxt">Color</label>
+                        <input class="color-input" type="colortxt" required placeholder="enter color">
+                    </li>    
+                </ul>
+                <ul>
+                    <li> 
+                        <label for="sizetxt">Size</label>
+                        <input class="size-input" type="sizetxt" required pattern="S|M|L|XL|XXL"  title="S, M, L, XL, XXL" placeholder="enter size">
+                    </li>
+                </ul>
+                <ul>
+                    <li> 
+                        <label for="pricetxt">Price</label>
+                        <input class="price-input" type="pricetxt" required placeholder="enter price">
+                    </li>
+                </ul>
+                 
+                <input type="text" class="search-input" id="searchInput" oninput="toggleSearchButton()">
+                
+                <button class="search-button" id="searchButton" onclick="search()">Search</button>
+                <a href="/Log in/choose_Ad.html" type="button" class="back-btn">Back</a>
+                <input type="reset" class="reset-btn" name="re_product" value="Reset">
+            </form>
+
+            </div>
+              
+        </article>
+    </main>
+</body>
+</html>

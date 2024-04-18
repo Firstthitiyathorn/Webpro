@@ -1,0 +1,128 @@
+body{
+    margin: 20;
+    padding: 20;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url('/picture/bg_1.png');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-add {
+    background: url('/picture/bg_1.png');
+    background-size: cover;
+    flex-grow: 1;
+    display: grid;
+    place-items: center;
+}
+
+.login-choose {
+    background: url('/picture/bg_2.png');
+    background-size: cover;
+    flex-grow: 1;
+    display: grid;
+    place-items: center;
+}
+
+
+.loginBox{
+    width: 350px;
+    height: 420px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.loginBox1 {
+    background-color: #3B6262; 
+}
+
+.loginBox2 {
+    background-color: #C4D9D9; 
+}
+
+.user{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 10px 0 20px;
+    color: white;
+    text-align: center;
+}
+
+.loginBox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.loginBox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #D9D9D9;
+    font-size: 16px;
+}
+
+.loginBox input::placeholder{
+    color: white;
+}
+
+.loginBox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #3B6262;
+    font-size: 16px;
+    background: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.loginBox input[type="submit"]:hover{
+    background: yellowgreen;
+    color: #262626;
+}
+
+.administrator {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.administrator .Product,.administrator .User{
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-bottom: 1px solid #fff;
+    color: #3B6262;
+    background: white;
+    border-radius: 15px;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.administrator .Product:hover , .administrator .User:hover{
+    background: yellowgreen;
+    color: #262626;
+}
+
+
