@@ -1,7 +1,6 @@
 {
   "name": "web-pro",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon Fonted-end.js"
@@ -13,5 +12,7 @@
     "express": "^4.19.2",
     "mysql2": "^3.9.4",
     "nodemon": "^3.1.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
